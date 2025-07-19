@@ -1,9 +1,6 @@
 # 🧭 Pathfinding Visualizer
 
 A fun and interactive web app that **visualizes popular pathfinding algorithms** like **BFS**, **DFS**, **Dijkstra’s**, and **A\*** in real-time. You can draw walls, move start/end points, adjust speed, generate mazes, and watch the algorithms find their way through the grid.
-
-[![Live Demo](https://jyotsna2029.github.io/pathfinding-visualizer)]
-
 ---
 
 ## What It Can Do
