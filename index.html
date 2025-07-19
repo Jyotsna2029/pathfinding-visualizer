@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Pathfinding Visualizer</title>
+  <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>&#x1F9ED; Pathfinding Visualizer</h1>
+      <p>Click and drag to create walls. Drag start/end nodes. Generate random mazes and visualize algorithms!</p>
+    </header>
+
+    <div class="controls">
+      <button id="clear-grid" title="Remove all walls and reset grid">Clear Grid</button>
+      <button id="reset-path" title="Clear visualization but keep walls">Reset Path</button>
+      <button id="generate-maze" title="Generate random maze pattern">Generate Maze</button>
+      <label for="algorithm-select">Algorithm:</label>
+      <select id="algorithm-select" title="Choose pathfinding algorithm">
+        <option value="dijkstra">Dijkstra's Algorithm</option>
+        <option value="bfs">Breadth-First Search</option>
+        <option value="dfs">Depth-First Search</option>
+        <option value="astar">A* Search</option>
+      </select>
+      <label for="grid-size">Grid Size:</label>
+      <select id="grid-size" title="Change grid dimensions">
+        <option value="20x50" selected>20x50</option>
+        <option value="15x35">15x35</option>
+        <option value="25x60">25x60</option>
+        <option value="10x25">10x25 (Small)</option>
+      </select>
+      <button id="start-visualization" title="Begin algorithm visualization">Start Visualization</button>
+      <button id="stop-visualization" title="Stop current visualization" disabled>Stop</button>
+    </div>
+
+    <div class="speed-control">
+      <label for="speed-range">Animation Speed:</label>
+      <input type="range" id="speed-range" min="1" max="100" step="1" value="80" title="Adjust animation speed (1=slow, 100=fast)">
+      <span id="speed-value">Speed: 80</span>
+    </div>
+
+    <div class="status-bar">
+      <span id="status-text">Ready</span>
+    </div>
+
+    <div class="grid-container"></div>
+
+    <div class="legend">
+      <span class="legend-item"><span class="grid-cell start"></span> Start</span>
+      <span class="legend-item"><span class="grid-cell end"></span> End</span>
+      <span class="legend-item"><span class="grid-cell wall"></span> Wall</span>
+      <span class="legend-item"><span class="grid-cell visited"></span> Visited</span>
+      <span class="legend-item"><span class="grid-cell path"></span> Shortest Path</span>
+    </div>
+
+    <div class="instructions">
+      <h3>Instructions:</h3>
+      <ul>
+        <li>Click and drag to place/remove walls</li>
+        <li>Drag the green (start) or red (end) node to reposition</li>
+        <li>Select an algorithm and click "Start Visualization"</li>
+        <li>Use "Clear Grid" to erase walls</li>
+        <li>Use "Reset Path" to clear the visualization</li>
+        <li>Click "Generate Maze" for a random obstacle challenge</li>
+        <li>Click "Stop" to abort an ongoing visualization</li>
+        <li>Speed slider: 1 = very slow, 100 = very fast</li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/bfs.js"></script>
+  <script src="./js/dfs.js"></script>
+  <script src="./js/dijkstra.js"></script>
+  <script src="./js/astar.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
