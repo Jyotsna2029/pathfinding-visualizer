@@ -6,7 +6,7 @@ A fun and interactive web app that **visualizes popular pathfinding algorithms**
 
 ---
 
-## 🚀 What It Can Do
+## What It Can Do
 
 - 🟦 Visualizes **BFS**, **DFS**, **Dijkstra**, and **A\*** step by step  
 - 🧱 Draw your own maze using wall blocks  
@@ -19,7 +19,7 @@ A fun and interactive web app that **visualizes popular pathfinding algorithms**
 
 ---
 
-## ⚡ How to Get Started
+## How to Get Started
 
 Clone the project and run it locally:
 
