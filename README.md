@@ -18,14 +18,3 @@ A fun and interactive web app that **visualizes popular pathfinding algorithms**
 - ⌨️ Keyboard shortcuts for power users  
 
 ---
-
-## How to Get Started
-
-## 🧰 How to Run Locally
-
-Clone the project and run it locally:
-
-```bash
-git clone https://github.com/Jyotsna2029/pathfinding-visualizer.git
-cd pathfinding-visualizer
-
